@@ -6,7 +6,8 @@ The General All and Everything Docs Repo where Markdown docs go to. Various topi
 ### Online Sites
 
 ScottGeek Tech site and blog on [ScottGeek.Technology](https://scottgeek.technology)
-That GitHub Pages formed from this Repo [ScottGeek.GitHub.Docs] (https://scottgeek.github.io/Docs/)
+
+That GitHub Pages formed from this Repo [ScottGeek.GitHub.Docs](https://scottgeek.github.io/Docs/)
 
 ### General Rules
 
