@@ -11,4 +11,12 @@ ScottGeek Tech site and blog on [ScottGeek.Technology](https://scottgeek.technol
 
 Fork/Copy/Read - the docs are a collection make of them as you choose. The only rule here is don't push blame or meaness in or around my repos. If you find no value here, then it is simple.... MOVE ON. If find value, then I would have succeeded at a modest goal.
 
+### The Docs Collective
+
+### To-Do's for this Repo
+
+- [] Add the first **Cheatsheet** for general DotNet API starting a Project with EF Core
+- [] The Next Thing
+
+
 #### ScottGeek
