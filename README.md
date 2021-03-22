@@ -17,8 +17,8 @@ Fork/Copy/Read - the docs are a collection make of them as you choose. The only 
 
 ### To-Do's for this Repo
 
-- [] Add the first **Cheatsheet** for general DotNet API starting a Project with EF Core
-- [] The Next Thing
+- [ ] Add the first **Cheatsheet** for general DotNet API starting a Project with EF Core
+- [ ] The Next Thing
 
 
 #### ScottGeek
