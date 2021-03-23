@@ -15,3 +15,43 @@
 
 * **Logging Nuget** If you want to print generated SQL statements: `dotnet add package Microsoft.Extensions.Logging.Console`
 * **Reading** *appsettings.json*, Nuget: `dotnet add package Microsoft.Extensions.Configuration.Json` *Note: Not necessary in ASP.NET*
+
+## Connection Strings in `appsettings.json`
+
+* [Connection Strings on Docs...](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings#aspnet-core)
+
+* Create *appsettings.json* file:
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=AddressBook;Trusted_Connection=True"
+  }
+}
+
+* Don't forget to *copy the file to output directory* if you build a console app. In ASP.NET Core, this is done automatically.
+  ![Copy to output directory](CopyToOutputDir.png)
+
+* Read connection string in ASP.NET Core's startup class:
+
+```csharp
+public class Startup
+{
+    private IConfiguration configuration;
+
+    public Startup(IConfiguration configuration)
+    {
+        this.configuration = configuration;
+    }
+
+    public void ConfigureServices(IServiceCollection services)
+    {
+        ...
+        services.AddDbContext<AddressBookContext>(options => options.UseSqlServer(
+            Configuration["ConnectionStrings:DefaultConnection"]));
+        ...
+    }
+
+    ...
+}
+```
