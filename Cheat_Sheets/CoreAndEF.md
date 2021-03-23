@@ -58,3 +58,37 @@ public class Startup
     ...
 }
 ```
+
+## The Data - Let's *Model*
+
+* [Modeling on MS Docs...](https://docs.microsoft.com/en-us/ef/core/modeling/)
+
+* Consider *conventions*
+  * Property named `Id` or `<type name>Id` -> *key* of an entity
+  * Keys that are `int` or `Guid` -> *generated values on add*
+  * Nullable CLR types (e.g. `string`, `int?`, `byte[]`) -> optional (string, int?, byte[], etc.)<br/>
+    Not nullable CLR types (e.g. `decimal`, `int`, `bool`) -> required
+  * Default maximum length is provider-specific. Example: SQL Server strings -> `nvarchar(max)`
+  * *Shadow properties* will be *auto-created* in the DB for foreign keys if no foreign key property is found in the dependent class.
+  * *Index* is created for each property that is used as a foreign key
+  * Name of the `DbSet<TEntity>` property -> table name<br/>, if not property exists, class name -> table name
+  * Default behavior for inheritance: *Table-per-Hierarchy (TPH)*
+
+* Configure your model using...
+  * ...*Fluent API* in [`DbContext.OnModelCreating`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.onmodelcreating) or
+  * ...*Data Annotations*
+      * Make sure you have ```using System.ComponentModel.DataAnnotations;``` On the model class
+
+```csharp
+// Data Annotations Example:
+
+public class Blog
+{
+    public int BlogId { get; set; }
+    [Required]
+    public string Url { get; set; }
+}
+```
+
+  * [Fluent to do a Model on Docs...](https://docs.microsoft.com/en-us/ef/core/modeling/#use-fluent-api-to-configure-a-model)
+
