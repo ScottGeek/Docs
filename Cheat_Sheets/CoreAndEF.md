@@ -32,7 +32,7 @@
 
 * Don't forget to *copy the file to output directory* if you build a console app. In ASP.NET Core, this is done automatically.
   ![Copy To Output Directory](https://user-images.githubusercontent.com/1904228/112211591-74a13300-8bf2-11eb-90f7-b4d4deab97e1.PNG)
-
+  * I set this to Copy If Newer. You can also set to Always Copy. Point being, make sure this always up to date.
 
 * Read connection string in ASP.NET Core's startup class:
 
