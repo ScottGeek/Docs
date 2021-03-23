@@ -28,9 +28,11 @@
     "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=AddressBook;Trusted_Connection=True"
   }
 }
+```
 
 * Don't forget to *copy the file to output directory* if you build a console app. In ASP.NET Core, this is done automatically.
-  ![Copy to output directory](CopyToOutputDir.png)
+  ![Copy To Output Directory](https://user-images.githubusercontent.com/1904228/112211591-74a13300-8bf2-11eb-90f7-b4d4deab97e1.PNG)
+
 
 * Read connection string in ASP.NET Core's startup class:
 
