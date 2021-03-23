@@ -1,6 +1,6 @@
 # EF/ASP.NET Cheat Sheet
 
-## Get Started with Installing EF
+## Get Started with Installing EF and Using in an App
 
 * [MS Documentation site - Getting Started...](https://docs.microsoft.com/en-us/ef/core/get-started/)
 
