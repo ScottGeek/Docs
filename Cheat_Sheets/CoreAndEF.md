@@ -14,5 +14,4 @@
   * `dotnet add package Microsoft.EntityFrameworkCore.Design`     *Required for Migrations Tools*
 
 * **Logging Nuget** If you want to print generated SQL statements: `dotnet add package Microsoft.Extensions.Logging.Console`
-* **Reading *appsettings.json*, Nuget: `dotnet add package Microsoft.Extensions.Configuration.Json`
-    * Note: Not necessary in ASP.NET
+* **Reading** *appsettings.json*, Nuget: `dotnet add package Microsoft.Extensions.Configuration.Json` *Note: Not necessary in ASP.NET*
