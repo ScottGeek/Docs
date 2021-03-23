@@ -16,7 +16,7 @@
 * **Logging Nuget** If you want to print generated SQL statements: `dotnet add package Microsoft.Extensions.Logging.Console`
 * **Reading** *appsettings.json*, Nuget: `dotnet add package Microsoft.Extensions.Configuration.Json` *Note: Not necessary in ASP.NET*
 
-## Connection Strings in `appsettings.json`
+## Connection Strings in `appsettings.json` and Wire Up
 
 * [Connection Strings on Docs...](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-strings#aspnet-core)
 
