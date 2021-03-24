@@ -92,3 +92,4 @@ public class Blog
 
   * [Fluent to do a Model on Docs...](https://docs.microsoft.com/en-us/ef/core/modeling/#use-fluent-api-to-configure-a-model)
 
+Next page: [01-Notes.md](https://github.com/ScottGeek/Docs/blob/main/_includes/01-Notes.md)
